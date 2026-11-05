@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safe Space Kampus - Wadah Peduli & Berbagi Keluh Kesah</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Banner -->
+    <header>
+        <h1>SAFE SPACE KAMPUS</h1>
+        <p>"Wadah Peduli, Berbagi Keluh Kesah & Lindungi Sesama"</p>
+    </header>
+
+    <!-- Konten Utama -->
+    <main>
+        <!-- Bagian Informasi Masalah -->
+        <section class="card">
+            <h2>Masalah Utama yang Sering Dihadapi</h2>
+            <ul>
+                <li>Bullying (Tekanan dari teman, dsb)</li>
+                <li>Burnout Akademik (Beban tugas berlebih)</li>
+                <li>Kecemasan (Mengenai masa depan, dsb)</li>
+                <li>Masalah Interpersonal (Konflik, dsb)</li>
+            </ul>
+        </section>
+
+        <!-- Formulir Pengaduan Online -->
+<section class="card">
+    <h2>Formulir Pengaduan & Dukungan</h2>
+    
+    <form id="pengaduanForm" action="https://api.web3forms.com/submit" method="POST">
+    
+    <input type="hidden" name="access_key" value="751aa272-348c-4dc3-ac22-33c4a81313c7">
+
+    <label for="nama">Nama (Opsional / Bisa Anonim):</label>
+    <input type="text" id="nama" name="nama" placeholder="Kosongkan jika ingin anonim">
+
+    <label for="jenisMasalah">Pilih Jenis Masalah:</label>
+    <select id="jenisMasalah" name="jenis_masalah" required>
+        <option value="">-- Pilih Masalah --</option>
+        <option value="Bullying">Bullying</option>
+        <option value="Burnout Akademik">Burnout Akademik</option>
+        <option value="Kecemasan">Kecemasan</option>
+        <option value="Masalah Interpersonal">Masalah Interpersonal</option>
+    </select>
+
+    <label for="kronologi">Ceritakan Kronologi Kejadian & Dampak:</label>
+    <textarea id="kronologi" name="kronologi" rows="4" placeholder="Jelaskan kejadian dan dampak yang dirasakan..." required></textarea>
+
+    <label for="bantuan">Bentuk Bantuan yang Diharapkan:</label>
+    <input type="text" id="bantuan" name="bantuan_diharapkan" placeholder="Contoh: Konseling dengan psikolog kampus" required>
+
+    <button type="submit">Kirim Pengaduan Aman</button>
+</form>
+<p id="statusPesan" style="margin-top: 10px;"></p>
+        </section>
+    </main>
+
+    <!-- Footer / Anggota Kelompok -->
+    <footer>
+        <p><strong>Kelompok 1:</strong> Nabil Suryanzah | Fauziyyah Paharuddin | Alif Bangsawan | Anisa Khumairah | Wd Armasari Anggriana</p>
+        <p>&copy; 2026 Safe Space Kampus. Kerahasiaan & Keamanan Data Terjamin.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
